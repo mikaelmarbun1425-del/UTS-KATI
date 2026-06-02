@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pemesanan & Transaksi</title>
+</head>
+<body bgcolor="#FFFFFF" text="#333333">
+    <a id="atas"></a>
+    
+    <p align="right"><a href="#atas"><font size="1" face="Arial">▲ Atas</font></a></p>
+    <hr color="#8B0000" size="3">
+
+    <a id="halaman_transaksi"></a>
+    <br>
+    <p align="center"><font face="Arial" size="5" color="#8B0000"><b>FORMULIR PEMESANAN & TRANSAKSI</b></font></p>
+    <hr color="#FFD700" width="50%">
+    <br>
+    
+    <form action="#" method="post">
+        <table border="0" width="90%" align="center" cellpadding="8" cellspacing="0" bgcolor="#FFF5EE">
+            <tr>
+                <td colspan="2" bgcolor="#8B0000" align="center">
+                    <font color="#FFFFFF" face="Arial"><b>Isi Data Anda Secara Lengkap</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td width="35%"><font face="Arial" size="2">Nama Lengkap</font></td>
+                <td><input type="text" name="nama" size="30" placeholder="Masukkan Nama Anda" required></td>
+            </tr>
+            <tr>
+                <td><font face="Arial" size="2">Nomor Telepon/WA</font></td>
+                <td><input type="tel" name="telepon" size="20" placeholder="08**-****-****" required></td>
+            </tr>
+            <tr>
+                <td><font face="Arial" size="2">Metode Layanan</font></td>
+                <td>
+                    <input type="radio" name="srv" value="Delivery" checked> Delivery Order (Bandung Area)
+                    <input type="radio" name="srv" value="DineIn"> Reservasi Meja (Dine-In)
+                </td>
+            </tr>
+            <tr>
+                <td><font face="Arial" size="2">Pilih Menu Utama</font></td>
+                <td>
+                    <select name="menu_utama">
+                        <option value="Shoyu Ramen">Shoyu Ramen Pro - Rp 45.000</option>
+                        <option value="Miso Ramen">Miso Ramen Authentic - Rp 48.000</option>
+                        <option value="Spicy Tori Ramen">Spicy Tori Ramen - Rp 50.000</option>
+                        <option value="Salmon Sushi">Salmon Sushi Premium - Rp 65.000</option>
+                        <option value="Chicken Katsu Bento">Chicken Katsu Bento - Rp 38.000</option>
+                        <option value="Beef Yakiniku Bento">Beef Yakiniku Bento - Rp 42.000</option>
+                        <option value="Cold Ocha">Cold Ocha (Refill) - Rp 10.000</option>
+                        <option value="Iced Matcha Latte">Iced Matcha Latte - Rp 22.000</option>
+                        <option value="Mochi Ice Cream">Mochi Ice Cream - Rp 15.000</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><font face="Arial" size="2">Extra Topping (Makanan)</font></td>
+                <td>
+                    <p style="margin: 0 0 5px 0;"><font face="Arial" size="2" color="red"><i>*Note: Topping hanya tersedia jika Anda membeli menu makanan utama.</i></font></p>
+                    <input type="checkbox" name="topping_makanan[]" value="Telur Omega">Telur Omega &nbsp;
+                    <input type="checkbox" name="topping_makanan[]" value="Katsu Ayam">Katsu Ayam &nbsp;
+                    <input type="checkbox" name="topping_makanan[]" value="Kikurage">Kikurage (Jamur Kuping)
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><font face="Arial" size="2">Extra Topping (Minuman)</font></td>
+                <td>
+                    <p style="margin: 0 0 5px 0;"><font face="Arial" size="2" color="red"><i>*Note: Topping hanya tersedia jika Anda membeli menu minuman utama.</i></font></p>
+                    <input type="checkbox" name="topping_minuman[]" value="Extra Ice">Extra Ice &nbsp;
+                    <input type="checkbox" name="topping_minuman[]" value="Boba">Boba
+                </td>
+            </tr>
+            <tr>
+                <td><font face="Arial" size="2">Sistem Pembayaran</font></td>
+                <td>
+                    <select name="metode_pembayaran">
+                        <option value="COD">Cash On Delivery (COD)</option>
+                        <option value="Transfer">Transfer Bank (BNI=0091856209386 "Kingabit Kitchen R&B")</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top"><font face="Arial" size="2">Alamat Dan Pesan</font></td>
+                <td><textarea name="alamat_pesan" rows="3" cols="35" placeholder="Isi Alamat Secara Lengkap"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Kirim Pesanan Sekarang"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <br>
+    <p align="right"><a href="#atas"><font size="1" face="Arial">▲ Kembali ke Atas</font></a></p>
+</body>
+</html>
